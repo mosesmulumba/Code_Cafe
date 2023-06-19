@@ -1,4 +1,5 @@
 import '../App.css';
+import PropTypes from 'prop-types';
 
 export default function Thumbnail({ image, name }) {
   return (
@@ -7,12 +8,19 @@ export default function Thumbnail({ image, name }) {
                 <img
                     src={image}
                     alt={name}
-                    width="250px"
-                    height="290px"
+                    width="220px"
+                    height="220px"
                     className="image"
                 />
-                <p className="item--name">{name}</p>
             </a>
+            <div className='item--title'>
+                <p className="item--name">{name}</p>
+            </div>
         </div>
   );
+}
+
+Thumbnail.propTypes = {
+    image : PropTypes.string.isRequired,
+    name :  PropTypes.string.isRequired,
 }
