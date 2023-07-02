@@ -1,0 +1,14 @@
+.not-found-page{
+   font-size: larger;
+   font-weight: bolder;
+   padding: 15rem 15rem 30rem;
+   align-content: center;
+   display: block;
+}
+.not-found-page h1{
+    margin-top: 0;
+    align-items: center;
+}
+.not-found-page a{
+    color: #009900;
+}

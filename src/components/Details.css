@@ -1,0 +1,122 @@
+.details-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-right: 1rem; */
+}
+
+.details-component > div:first-child {
+    padding: 0 20px;
+}
+
+.details-component-sidebar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    position: fixed;
+    width: 100vw;
+    overflow: scroll;
+    bottom: 0;
+}
+
+.details-component-sidebar img {
+    height: 120px;
+    width: 120px;
+}
+
+.details-component-sidebar .thumbnail-component:last-child {
+    margin-right: 10px;
+}
+
+.details-component-sidebar .thumbnail-component:first-child {
+    margin-left: 10px;
+}
+
+.details-component-sidebar .thumbnail-component:nth-child(3n + 2) div {
+    background-color: #9BA699;
+}
+
+.details-component-sidebar .thumbnail-component:nth-child(3n + 3) div {
+    background-color: #3F3F40;
+}
+
+@media (min-width: 768px) {
+
+    .details-component {
+        flex-direction: row-reverse;
+        padding: 0 50px;
+    }
+
+    .details-component > div:first-child {
+        padding: 0 50px;
+        flex: 1;
+    }
+
+
+    .details-component-sidebar {
+        position: relative;
+        flex-direction: column;
+        row-gap: 32px;
+        width: 200px;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .details-component-sidebar .thumbnail-component:last-child,
+    .details-component-sidebar .thumbnail-component:first-child   {
+        margin: 0;
+    }
+
+    .details-component-sidebar img {
+        height: 120px;
+        width: 120px;
+    }
+}
+@media (min-width: 400px) {
+
+    .details-component {
+        flex-direction: row-reverse;
+        padding: 0 50px;
+    }
+
+    .details-component > div:first-child {
+        padding: 0 15rem;
+        flex: 1;
+    }
+
+
+    .details-component-sidebar {
+        position: relative;
+        flex-direction: column;
+        row-gap: 15px;
+        width: 200px;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .details-component-sidebar .thumbnail-component:last-child,
+    .details-component-sidebar .thumbnail-component:first-child   {
+        margin: 0;
+    }
+
+    .details-component-sidebar img {
+        height: 150px;
+        width: 150px;
+        margin-left: 1rem;
+    }
+}
+.detail-image{
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    border-radius: 10px;
+}
+.details-page{
+    display: flex;
+    align-items: center;
+    background-color: #9BA699;
+}
+.details-component{
+    display: block;
+    margin-left: 15rem;
+}

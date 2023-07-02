@@ -2,6 +2,7 @@ import React from "react";
 import Thumbnail from "./Thumbnail";
 import { itemImages} from '../items';
 import PropTypes from 'prop-types';
+import ItemType from "./ItemTypes";
 
 
 export default function Home({items}){
@@ -11,21 +12,11 @@ export default function Home({items}){
             <Thumbnail 
             image={itemImages[item.imageId]} 
             name={item.title} 
-            key={item.itemId} />
+            key={item.itemId}
+            itemId={item.itemId} />
           ))}
       </div>
     )
 }
 
-Home.propTypes = {
-    items : PropTypes.arrayOf(
-      PropTypes.shape({
-        itemId : PropTypes.string.isRequired,
-        imageId : PropTypes.string.isRequired,
-        title : PropTypes.string.isRequired,
-        price : PropTypes.number.isRequired,
-        description : PropTypes.string,
-        salePrice : PropTypes.number,
-      }),
-    ).isRequired,
-};
+Home.propTypes = {items : PropTypes.arrayOf(ItemType).isRequired,};
