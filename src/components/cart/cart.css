@@ -1,0 +1,19 @@
+.carttop{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.cart--title{
+    padding: 5rem 2rem 1rem 4rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+table{
+    border-collapse: collapse;
+}
+tr , th {
+    padding: 18px;
+}

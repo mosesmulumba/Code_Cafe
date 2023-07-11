@@ -157,3 +157,17 @@
 .thumbnail--items:hover {
   cursor: pointer;
 }
+.header-component{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.badge{
+     text-decoration: none;
+     border-radius: 50%;
+     background-color: orange;
+     color: white;
+     float: left;
+     padding: 0.2em;
+     /* margin-right: 2em; */
+}
