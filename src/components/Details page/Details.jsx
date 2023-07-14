@@ -17,7 +17,9 @@ export default function Details({dispatch , items}) {
   const addItemToCart = () => {
     dispatch({type : CartTypes.ADD , itemId : DetailItem.itemId});
   };
+  console.log(dispatch);
 
+  
   return (
     <div className="details-page">
       {DetailItem ? (

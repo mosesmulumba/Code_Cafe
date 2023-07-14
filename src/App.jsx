@@ -57,11 +57,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Home items={items} />} />
               <Route path="*" element={<NotFoundPage />} />
-              <Route path="/details" element={<Details items={items} />}>
-                <Route path=":id" element={<Details items={items}  dispatch={dispatch} />} />
+              <Route path="/details" element={<Details items={items}  dispatch={dispatch} />}>
+                <Route path=":id" element={<Details items={items}  />} />
                 <Route index element={<div>No Item Selected</div>} />
               </Route>
-              <Route path="/cart" element={<Cart  cart={cart}/>} />
+              <Route path="/cart" element={<Cart  cart={cart} items={items} dispatch={dispatch} />} />
             </Routes>
           )}
       </Router>
