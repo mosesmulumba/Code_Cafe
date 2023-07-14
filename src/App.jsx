@@ -17,27 +17,27 @@ function App() {
   // const addToCart = (itemId) => dispatch({type : CartTypes.ADD , itemId});
  
   // first way to fetch the httpRequests using then/catch blocks
-  // useEffect(()=>{
-  //     // this will render the backend from a remote repository therefore
-  //     // will require internet access always to fetch the api
-  //     // axios.get("https://code-cafe-backend.onrender.com/api/items")
-  //     axios.get('http://localhost:3030/api/items')
-  //     .then((response) => setItems(response.data))
-  //     .catch(console.error);
-  // },[]);
+  useEffect(()=>{
+      // this will render the backend from a remote repository therefore
+      // will require internet access always to fetch the api
+      // axios.get("https://code-cafe-backend.onrender.com/api/items")
+      axios.get('http://localhost:3030/api/items')
+      .then((response) => setItems(response.data))
+      .catch(console.error);
+  },[]);
 
   // second way to fetch the httpRequest with axios alongside async/await and try/catch blocks
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get("http://localhost:3030/api/items");
-        setItems(response.data);
-      } catch (error) {
-        console.log("error", error);
-      }
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get("http://localhost:3030/api/items");
+  //       setItems(response.data);
+  //     } catch (error) {
+  //       console.log("error", error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <Router>
