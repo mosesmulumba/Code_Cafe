@@ -63,8 +63,9 @@ export default function Details({dispatch , items}) {
               {" "}
               $ {(DetailItem.salePrice ?? DetailItem.price).toFixed(2)}
             </div>
+            <Button onClick={addItemToCart} />
           </div>
-          <Button onClick={addItemToCart} />
+          
         </>
       ) : (
         <div
