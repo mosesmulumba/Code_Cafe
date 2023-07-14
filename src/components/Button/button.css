@@ -1,0 +1,17 @@
+button{
+    border:1px solid #ffc107;
+    background-color: #fff;
+    color: #ffc003;
+    height: 6vh;
+    border-radius: 5px;
+    width: 22dvh;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: #ffc107;
+    color: #fff;
+}
+td button{
+    width: 30px;
+    height: 20px;
+}
